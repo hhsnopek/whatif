@@ -3,15 +3,49 @@ header
     What if?
     ========
 
-div#headertwo
-  :markdown
-    ## Determine your future
+#headertwo
+    :markdown
+     ## Determine your future
 
 nav
   :markdown
     - #### [About](#about)
     - #### [Support](#support)
     - #### [Contact](#contact)
+
+#container
+  #content
+    #about
+      :markdown
+        #### About
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac odio quis nulla consectetur sagittis sed ac ligula. Fusce tristique dui nec diam venenatis, id condimentum sapien dignissim. Nam in lacus sed justo congue auctor ut id nulla. Proin sed elementum metus, eu varius nisi. Sed a convallis lorem, vel laoreet diam. Curabitur luctus malesuada erat sit amet tempus. Sed id semper mauris.
+
+        Ut interdum ut tortor ac volutpat. Phasellus feugiat, ligula ut vehicula hendrerit, orci leo blandit dolor, a bibendum magna nisl a magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec varius nec nulla nec ullamcorper. Nam commodo feugiat congue. Duis consequat, risus tincidunt elementum imperdiet, purus quam vehicula nisi, ut rutrum odio lorem a velit. Mauris est tellus, pretium a malesuada eu, laoreet vel urna. Mauris tincidunt odio nec elit suscipit lacinia. Phasellus ornare imperdiet tellus, eget malesuada erat viverra quis. Fusce aliquet velit nisl, vel tempor leo consectetur a.
+
+    #support
+      :markdown
+        #### Support
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac odio quis nulla consectetur sagittis sed ac ligula. Fusce tristique dui nec diam venenatis, id condimentum sapien dignissim. Nam in lacus sed justo congue auctor ut id nulla. Proin sed elementum metus, eu varius nisi. Sed a convallis lorem, vel laoreet diam. Curabitur luctus malesuada erat sit amet tempus. Sed id semper mauris.
+
+        Ut interdum ut tortor ac volutpat. Phasellus feugiat, ligula ut vehicula hendrerit, orci leo blandit dolor, a bibendum magna nisl a magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec varius nec nulla nec ullamcorper. Nam commodo feugiat congue. Duis consequat, risus tincidunt elementum imperdiet, purus quam vehicula nisi, ut rutrum odio lorem a velit. Mauris est tellus, pretium a malesuada eu, laoreet vel urna. Mauris tincidunt odio nec elit suscipit lacinia. Phasellus ornare imperdiet tellus, eget malesuada erat viverra quis. Fusce aliquet velit nisl, vel tempor leo consectetur a.
+
+    #contact
+      :markdown
+        #### Contact
+
+        Developer - Henry Snopek
+
+
+        Email - hhsnopek@gmail.com
+
+
+        Phone - (555) 555-1234
+
+
+        Site - [hhsnopek.com](http://hhsnopek.com)
+
 
 :stylus
   @import url(http://fonts.googleapis.com/css?family=Raleway:300)
@@ -33,26 +67,58 @@ nav
   header
     color blue
     font-size 24px
-    margin-top 17%
+    margin-top 15%
 
   #headertwo
-    margin-top 5%
     color red
+    margin-top 5%
 
   nav
     font-size 14px
     list-style none
     margin-top 15%
+    margin-bottom 10%
 
     li
       display inline
       margin-right 60px
+
 
       &:last-child
         margin-right 32px
 
       h4
         display inline-block
+        background-color #333
+        border-radius 5px
+        padding-left 10px
+        padding-right 10px
+        padding-top 5px
+        padding-bottom 5px
+
+        &:hover
+          background-color #454545
+
       a
         color blue
         text-decoration none
+
+  #container
+    background-color #fff
+    width 100%
+    border-top 3px red solid
+
+    #content
+      padding-bottom 5%
+      max-width 800px
+      padding-top 5%
+      margin-left 20%
+      margin-right 20%
+    
+    #about, #support, #contact
+      padding-top 3%
+      border-bottom 2px blue dashed
+
+  @media screen(min-width 400px)
+    nav li
+      margin-right 20px
